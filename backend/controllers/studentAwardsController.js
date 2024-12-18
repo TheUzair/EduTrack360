@@ -34,9 +34,9 @@ export const createStudentAward = async (req, res) => {
 
 export const createMultipleStudentAwards = async (req, res) => {
   try {
-    const awards = req.body; // An array of award objects
-    const savedAwards = await StudentAward.insertMany(awards); // Insert all awards in a single operation
-    res.status(201).json(savedAwards); // Return the saved awards
+    const awards = req.body; 
+    const savedAwards = await StudentAward.insertMany(awards); 
+    res.status(201).json(savedAwards);
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

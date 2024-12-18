@@ -12,7 +12,7 @@ const router = express.Router();
 // Get all behavioral records
 router.get('/', getBehavioralRecords);
 
-// Get a specific behavioral record by ID (MONGO'S _id not student_id)
+// Get a specific behavioral record by Mongo's ID
 router.get('/:id', getBehavioralRecordById);
 
 // Create a new behavioral record

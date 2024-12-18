@@ -36,9 +36,9 @@ export const createTermDetail = async (req, res) => {
 // Bulk create term details
 export const createBulkTermDetails = async (req, res) => {
   try {
-    const terms = req.body; // Assuming the body is an array of term details
-    const savedTerms = await TermDetail.insertMany(terms); // Bulk insert
-    res.status(201).json(savedTerms); // Send back the inserted terms
+    const terms = req.body; 
+    const savedTerms = await TermDetail.insertMany(terms); 
+    res.status(201).json(savedTerms);
   } catch (error) {
     console.error("Error inserting bulk terms:", error.message);
     res.status(400).json({ message: error.message });

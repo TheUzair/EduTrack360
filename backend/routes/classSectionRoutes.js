@@ -3,7 +3,7 @@ import {
   getClassSections,
   getClassSectionById,
   createClassSection,
-  createMultipleClassSections, // Import the new bulk creation function
+  createMultipleClassSections, 
   updateClassSection,
   deleteClassSection,
 } from '../controllers/classSectionController.js';
@@ -20,7 +20,7 @@ router.get('/:id', getClassSectionById);
 router.post('/', createClassSection);
 
 // Bulk create class sections
-router.post('/bulk', createMultipleClassSections); // New route for bulk class section creation
+router.post('/bulk', createMultipleClassSections); 
 
 // Update an existing class section
 router.put('/:id', updateClassSection);

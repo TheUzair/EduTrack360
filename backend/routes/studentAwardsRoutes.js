@@ -20,8 +20,7 @@ router.get('/:id', getStudentAwardById);
 router.post('/', createStudentAward);
 
 // Bulk create student awards
-router.post('/bulk', createMultipleStudentAwards); // New route for bulk awards creation
-
+router.post('/bulk', createMultipleStudentAwards);
 
 // Update an existing student award
 router.put('/:id', updateStudentAward);

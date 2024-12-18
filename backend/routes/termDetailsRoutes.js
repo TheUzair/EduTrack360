@@ -3,7 +3,7 @@ import {
   getTermDetails,
   getTermDetailById,
   createTermDetail,
-  createBulkTermDetails, // Import the bulk insert function
+  createBulkTermDetails, 
   updateTermDetail,
   deleteTermDetail,
 } from '../controllers/termDetailsController.js';
@@ -20,7 +20,7 @@ router.get('/:id', getTermDetailById);
 router.post('/', createTermDetail);
 
 // Bulk create term details
-router.post('/bulk', createBulkTermDetails); // Add this route for bulk insert
+router.post('/bulk', createBulkTermDetails); 
 
 // Update an existing term detail
 router.put('/:id', updateTermDetail);

@@ -52,6 +52,7 @@ export const createBehavioralRecord = async (req, res) => {
     });
   }
 };
+
 // Update an existing behavioral record
 export const updateBehavioralRecord = async (req, res) => {
   try {

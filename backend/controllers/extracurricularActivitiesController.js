@@ -25,10 +25,6 @@ export const getExtracurricularActivityById = async (req, res) => {
 // Create a new extracurricular activity
 export const createExtracurricularActivity = async (req, res) => {
   try {
-    // const activityData = {
-    //   ...req.body,
-    //   activity_id: new mongoose.Types.ObjectId().toString() // Generate unique ID
-    // };
     const activityData = {...req.body}
     const newActivity = new ExtracurricularActivity(activityData);
     await newActivity.save();

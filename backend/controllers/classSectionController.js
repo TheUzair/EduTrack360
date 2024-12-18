@@ -34,9 +34,9 @@ export const createClassSection = async (req, res) => {
 
 export const createMultipleClassSections = async (req, res) => {
   try {
-    const sections = req.body; // Array of class section objects
-    const savedSections = await ClassSection.insertMany(sections); // Insert all sections in one operation
-    res.status(201).json(savedSections); // Return the saved sections
+    const sections = req.body;
+    const savedSections = await ClassSection.insertMany(sections); 
+    res.status(201).json(savedSections); 
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

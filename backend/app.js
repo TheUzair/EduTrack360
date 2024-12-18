@@ -1,5 +1,5 @@
 import express from 'express';
-import connectDB from './config/connectDB.js'; // Correct path
+import connectDB from './config/connectDB.js';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import behavioralRecordsRoutes from './routes/behavioralRecordsRoutes.js';
@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
-app.use(express.json()); // Parse JSON requests
+app.use(express.json());
 
 // Connect to the database and initialize collections
 connectDB();
