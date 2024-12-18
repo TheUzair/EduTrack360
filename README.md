@@ -134,7 +134,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - **Shadcn UI**: For providing a set of modern UI components that make UI development easier.
 - **Lucide React**: For offering a collection of customizable and scalable icons.
-- All contributors who have helped shape this project.
 
 ---
 
