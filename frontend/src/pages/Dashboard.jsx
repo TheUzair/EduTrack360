@@ -11,7 +11,6 @@ import {
 } from 'lucide-react';
 
 const Dashboard = () => {
-  // Sample data - Replace with actual data from your backend
   const recentActivities = [
     { id: 1, type: 'award', student: 'John Smith', action: 'received Academic Excellence Award', time: '2 hours ago' },
     { id: 2, type: 'behavioral', student: 'Emma Wilson', action: 'participated in community service', time: '3 hours ago' },
@@ -22,14 +21,14 @@ const Dashboard = () => {
   const stats = [
     { 
       title: 'Total Students',
-      value: '1,234',
+      value: '100',
       icon: <Users className="w-6 h-6" />,
       change: '+5.2%',
       color: 'bg-blue-500'
     },
     {
       title: 'Active Awards',
-      value: '156',
+      value: '25',
       icon: <Award className="w-6 h-6" />,
       change: '+2.4%',
       color: 'bg-green-500'
@@ -43,7 +42,7 @@ const Dashboard = () => {
     },
     {
       title: 'Activities',
-      value: '89',
+      value: '30',
       icon: <Activity className="w-6 h-6" />,
       change: '+12.5%',
       color: 'bg-orange-500'
@@ -71,14 +70,14 @@ const formatDate = (date) => {
                                  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][date.getMonth()]} ${date.getFullYear()}`;
 };
 
-// Pre-calculate the event dates
+// Event dates
 const eventDates = [
-    getFutureDate(1, 5),  // Event 1
-    getFutureDate(2, 9),  // Event 2
-    getFutureDate(3, 0)   // Event 3
+    getFutureDate(1, 5), 
+    getFutureDate(2, 9), 
+    getFutureDate(3, 0)   
 ];
 
-// Update event dates using the pre-calculated dates
+// Update event dates
 upcomingEvents.forEach((event, index) => {
     if (index < eventDates.length) {
         event.date = formatDate(eventDates[index]);

@@ -85,13 +85,13 @@ const ExtracurricularActivitiesPage = () => {
       }
   
       const formattedActivity = {
-        student_id: activity.student_id, // Required ObjectId
+        student_id: activity.student_id, 
         activity_name: activity.activity_name,
         activity_type: activity.activity_type,
         participation_date: new Date(activity.participation_date).toISOString(),
         level_of_participation: activity.level_of_participation,
         award_received: activity.award_received || '',
-        teacher_in_charge: activity.teacher_in_charge, // Required ObjectId
+        teacher_in_charge: activity.teacher_in_charge, 
         comments: activity.comments || '',
         created_by: 'admin',
         updated_by: 'admin',
@@ -117,6 +117,7 @@ const ExtracurricularActivitiesPage = () => {
       });
     }
   };
+
   const handleUpdate = async (activity) => {
     try {
       if (!validateActivity(activity)) {
@@ -163,6 +164,7 @@ const ExtracurricularActivitiesPage = () => {
       });
     }
   };
+
   const handleDelete = async (activity) => {
     const activityId = activity._id.$oid || activity._id;
     setDeleteActivityId(activityId);
@@ -195,6 +197,7 @@ const ExtracurricularActivitiesPage = () => {
       });
     }
   };
+  
   useEffect(() => {
     fetchActivities();
   }, []);

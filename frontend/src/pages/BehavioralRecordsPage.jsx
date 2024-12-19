@@ -166,7 +166,6 @@ const BehavioralRecordsPage = () => {
     setIsDeleting(true);
   };
 
-
   // Confirm delete action
   const handleDeleteConfirm = async () => {
     try {
