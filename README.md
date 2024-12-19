@@ -59,11 +59,16 @@
    npm install
    ```
 
-4. **Configure Environment Variables**: Create a `.env` file in the backend directory with the following content:
-   ```env
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/personal-social-records
-   ```
+4. **Configure Environment Variables**: 
+   - Create a `.env` file in the backend directory with the following content:
+      ```env
+      PORT=5000
+      MONGODB_URI=mongodb://localhost:27017/personal-social-records
+      ```
+   - Create a `.env` file in the frontend directory too with the following content:
+      ```env
+      VITE_API_URL=your_backend_api_url
+      ```
 
 ### **Running the Application**
 
