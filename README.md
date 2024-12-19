@@ -2,6 +2,11 @@
 
 **EduTrack360** is a comprehensive school management system designed to track and manage various aspects of student life, including behavioral records, extracurricular activities, academic achievements, class sections, and more. This application provides a user-friendly interface for managing and visualizing student data while supporting role-based access control to ensure appropriate permissions.
 
+## **Live Demo**
+🚀 **Production**: [https://edutrack360.onrender.com](https://edutrack360.onrender.com)
+
+🔧 **API Endpoint**: [https://edutrack360backend.onrender.com](https://edutrack360backend.onrender.com)
+
 ## **Features**
 
 - **Student Behavioral Records Management**: Track and manage behavioral records for students, including disciplinary actions, positive feedback, and comments from teachers.
