@@ -32,7 +32,7 @@
 ## **Getting Started**
 
 ### **Prerequisites**
-- **Node.js** (v20 or higher)
+- **Node.js** (v22 or higher)
 - **MongoDB** for database management.
 
 ### **Installation**
