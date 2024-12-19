@@ -124,9 +124,9 @@ const HomePage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {[
-              { label: "Total Students", value: "1,234+" },
-              { label: "Activities Tracked", value: "50+" },
-              { label: "Awards Given", value: "789" },
+              { label: "Total Students", value: "100+" },
+              { label: "Activities Tracked", value: "30+" },
+              { label: "Awards Given", value: "25+" },
               { label: "Active Classes", value: "45" },
             ].map((stat, index) => (
               <div key={index} className="bg-gray-50 rounded-lg p-6">
