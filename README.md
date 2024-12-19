@@ -119,7 +119,7 @@ The application will be available at `http://localhost:5173`.
 
 ## **Contributing**
 
-We welcome contributions to the **KreupCampus360** project. To contribute, follow these steps:
+We welcome contributions to the **EduTrack360** project. To contribute, follow these steps:
 
 1. Fork the repository.
 2. Create a feature branch:
