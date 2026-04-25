@@ -1,4 +1,4 @@
-# **Personal & Social Records System (EduTrack360)**
+# **EduTrack360**
 
 **EduTrack360** is a comprehensive school management system designed to track and manage various aspects of student life, including behavioral records, extracurricular activities, academic achievements, class sections, and more. This application provides a user-friendly interface for managing and visualizing student data while supporting role-based access control to ensure appropriate permissions.
 
