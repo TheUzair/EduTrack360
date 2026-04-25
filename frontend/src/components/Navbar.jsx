@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, BookOpen, User, School } from 'lucide-react';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, BookOpen, User, School } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -25,12 +25,32 @@ const Navbar = () => {
   const location = useLocation();
 
   const navigationLinks = [
-    { path: '/', label: 'Home', icon: <BookOpen className="w-4 h-4" /> },
-    { path: '/behavioral-records', label: 'Behavioral Records', icon: <User className="w-4 h-4" /> },
-    { path: '/extracurricular-activities', label: 'Extracurricular Activities', icon: <School className="w-4 h-4" /> },
-    { path: '/student-awards', label: 'Student Awards', icon: <BookOpen className="w-4 h-4" /> },
-    { path: '/class-section', label: 'Class Section', icon: <User className="w-4 h-4" /> },
-    { path: '/term-details', label: 'Term Details', icon: <School className="w-4 h-4" /> },
+    { path: "/", label: "Home", icon: <BookOpen className="w-4 h-4" /> },
+    {
+      path: "/behavioral-records",
+      label: "Behavioral Records",
+      icon: <User className="w-4 h-4" />,
+    },
+    {
+      path: "/extracurricular-activities",
+      label: "Extracurricular Activities",
+      icon: <School className="w-4 h-4" />,
+    },
+    {
+      path: "/student-awards",
+      label: "Student Awards",
+      icon: <BookOpen className="w-4 h-4" />,
+    },
+    {
+      path: "/class-section",
+      label: "Class Section",
+      icon: <User className="w-4 h-4" />,
+    },
+    {
+      path: "/term-details",
+      label: "Term Details",
+      icon: <School className="w-4 h-4" />,
+    },
   ];
 
   const isActiveLink = (path) => location.pathname === path;
@@ -46,7 +66,7 @@ const Navbar = () => {
                 <AvatarFallback>KC</AvatarFallback>
               </Avatar>
               <div className="flex flex-col">
-                <span className="text-lg font-semibold">KreupCampus360</span>
+                <span className="text-lg font-semibold">EduTrack360</span>
                 <span className="text-xs text-muted-foreground">
                   Personal & Social Records System
                 </span>
@@ -62,7 +82,7 @@ const Navbar = () => {
                       asChild
                       className={cn(
                         "flex items-center gap-2 px-4 py-2 text-sm font-medium",
-                        isActiveLink(link.path) && "text-primary"
+                        isActiveLink(link.path) && "text-primary",
                       )}
                     >
                       <Link to={link.path}>
@@ -84,7 +104,9 @@ const Navbar = () => {
             </Avatar>
             <div className="flex flex-col">
               <span className="text-sm font-medium">Human</span>
-              <span className="text-xs text-muted-foreground">Administrator</span>
+              <span className="text-xs text-muted-foreground">
+                Administrator
+              </span>
             </div>
           </div>
 
@@ -113,7 +135,9 @@ const Navbar = () => {
                   </Avatar>
                   <div>
                     <p className="text-sm font-medium">Human</p>
-                    <p className="text-xs text-muted-foreground">Administrator</p>
+                    <p className="text-xs text-muted-foreground">
+                      Administrator
+                    </p>
                   </div>
                 </div>
                 {navigationLinks.map((link) => (
@@ -122,7 +146,7 @@ const Navbar = () => {
                     to={link.path}
                     className={cn(
                       "flex items-center gap-2 px-2 py-1 text-sm",
-                      isActiveLink(link.path) && "text-primary"
+                      isActiveLink(link.path) && "text-primary",
                     )}
                   >
                     {link.icon}

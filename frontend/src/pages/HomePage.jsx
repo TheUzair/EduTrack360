@@ -1,22 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { 
-  BookOpen, 
-  Award, 
-  Users, 
-  Calendar, 
-  Activity, 
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  BookOpen,
+  Award,
+  Users,
+  Calendar,
+  Activity,
   Clock,
-  ChevronRight
-} from 'lucide-react'; 
-import {useNavigate} from 'react-router-dom';
-import Dashboard from './Dashboard';
+  ChevronRight,
+} from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Dashboard from "./Dashboard";
 
 const HomePage = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    navigate('/dashboard');
+    navigate("/dashboard");
   };
 
   const features = [
@@ -30,7 +30,8 @@ const HomePage = () => {
     {
       icon: <Activity className="w-8 h-8" />,
       title: "Extracurricular Activities",
-      description: "Monitor student participation in various activities and clubs",
+      description:
+        "Monitor student participation in various activities and clubs",
       link: "/extracurricular-activities",
       color: "bg-green-100 text-green-600",
     },
@@ -64,7 +65,6 @@ const HomePage = () => {
     },
   ];
 
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -78,11 +78,16 @@ const HomePage = () => {
               A comprehensive system to manage and track student development
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors" onClick={handleButtonClick}>
-              
+              <button
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+                onClick={handleButtonClick}
+              >
                 Get Started
               </button>
-              <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors" onClick={handleButtonClick}>
+              <button
+                className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                onClick={handleButtonClick}
+              >
                 Learn More
               </button>
             </div>
@@ -94,21 +99,21 @@ const HomePage = () => {
       <div className="container mx-auto px-4 mb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
-            <Link 
-              to={feature.link} 
+            <Link
+              to={feature.link}
               key={index}
               className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="p-6">
-                <div className={`${feature.color} rounded-full w-16 h-16 flex items-center justify-center mb-4`}>
+                <div
+                  className={`${feature.color} rounded-full w-16 h-16 flex items-center justify-center mb-4`}
+                >
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  {feature.description}
-                </p>
+                <p className="text-gray-600 mb-4">{feature.description}</p>
                 <div className="flex items-center text-blue-600 font-medium">
                   <span>Learn more</span>
                   <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
@@ -147,15 +152,34 @@ const HomePage = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">About</h4>
               <p className="text-gray-400">
-                Personal & Social Records System helps schools track and manage student development effectively.
+                EduTrack360 System helps schools track and manage student
+                development effectively.
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><Link to="/help" className="text-gray-400 hover:text-white">Help Center</Link></li>
-                <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact Support</Link></li>
-                <li><Link to="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</Link></li>
+                <li>
+                  <Link to="/help" className="text-gray-400 hover:text-white">
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className="text-gray-400 hover:text-white"
+                  >
+                    Contact Support
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/privacy"
+                    className="text-gray-400 hover:text-white"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -167,7 +191,6 @@ const HomePage = () => {
               </ul>
             </div>
           </div>
-         
         </div>
       </footer>
     </div>
